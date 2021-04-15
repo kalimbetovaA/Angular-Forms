@@ -1,0 +1,42 @@
+<form #form1="ngForm" (ngSubmit)="onSubmit()">
+  <p>form-1 validity is: <span [ngClass]="{'invalid': !form1.valid}">{{form1.valid}}</span></p>
+  <div ngModelGroup="form2">
+    <p>form-2 validity is: <span [ngClass]="{'invalid': !form1.valid}">{{form1.valid}}</span></p>
+    <input name="name" type="text"required="required" ngModel>
+
+    <div ngModelGroup="form21">
+      <p>form-2.1 validity is: <span [ngClass]="{'invalid': !form1.valid}">{{form1.valid}}</span></p>
+      <input name="name" type="text" required="required" ngModel>
+    </div>
+
+    <div ngModelGroup="form22">
+      <p>form-2.2 validity is: <span [ngClass]="{'invalid': !form1.valid}">{{form1.valid}}</span></p>
+      <input name="name" type="text"required="required" ngModel>
+    </div>
+
+    <button>Toogle Reactive Form</button>
+    <div ngModelGroup="form3">
+      <p><b>Reactive Form</b></p>
+      <p>form-3 validity is: <span [ngClass]="{'invalid': !form1.valid}">{{form1.valid}}</span></p>
+      <input name="name" type="text"required="required" ngModel>
+
+      <div ngModelGroup="form31">
+        <p >form-3.1 validity is: <span [ngClass]="{'invalid': !form1.valid}">{{form1.valid}}</span></p>
+        <input name="name" type="text" required="required" ngModel>
+      </div>
+
+    </div>
+
+    <div ngModelGroup="form4">
+      <p><b>Isolated Form</b></p>
+      <p>form-4 validity is: <span [ngClass]="{'invalid': !form1.valid}">{{form1.valid}}</span></p>
+      <input name="name" type="text" required="required" ngModel>
+
+      <div ngModelGroup="form41">
+        <p >form-4.1 validity is: <span [ngClass]="{'invalid': !form1.valid}">{{form1.valid}}</span></p>
+        <input name="name" type="text" required="required" ngModel>
+      </div>
+    </div>
+  </div>
+  <button>Submit</button>
+</form>

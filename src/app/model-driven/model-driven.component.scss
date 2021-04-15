@@ -1,0 +1,33 @@
+p{
+  padding: 10px 20px;
+  margin: 0;
+  color: white;
+}
+div{
+  background: #5c69c7;
+  width: 45%;
+  float: left;
+  margin-right: 50px;
+  border: 1px solid #5c69c7;
+  border-radius: 10px;
+}
+form{
+  background: white;
+  padding: 20px;
+}
+label{
+  width: 30%;
+  display: inline-block;
+}
+input{
+  width: 65%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+button{
+  padding: 5px 10px;
+  color: white;
+  background: #5c69c7;
+  border: none;
+  border-radius: 5px;
+}
